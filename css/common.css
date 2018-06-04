@@ -1,5 +1,6 @@
 body {
  width: 100%;
+ max-width: 100vw;
  overflow-x:hidden;
  font-size: 0;
  padding: 0;
@@ -51,6 +52,7 @@ input[type='text']:focus:-ms-input-placeholder      {color:transparent;}
 
 .content {
  min-height: 100vh;
+ width: 100%;
 }
 ul:focus {
 	outline: none;
@@ -347,6 +349,16 @@ ul:focus {
 	font-weight: 300;
 	margin-top: 8px;
 }
+.rightSidebar__advertiseBlock {
+	width: 100%;
+}
+.rightSidebar__advertiseBlock>a {
+	width: 100%;
+}
+.rightSidebar__advertiseBlock>a>img {
+	width: 100%;
+}
+
 
 /* ============ HEADER ============= */
 
@@ -380,7 +392,7 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 	margin-right: 10px;
 	max-width:600px;
 	min-width:300px;
-	display: none;
+	/* display: none; */
 }
 .topbar>.warning>span {
 	font-size: 0.8rem;
@@ -430,6 +442,7 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	display: none;
 }
 .loggedIn>.lastEntry {
 	font-size: 0.9rem;
@@ -453,7 +466,7 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 	width: 20%;
 	min-width:70px;
 	max-width:115px;
-	display: none;
+	
 }
 .topbar>.entry>button {
 	width: 100%;
@@ -470,6 +483,7 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 	width: 20%;
 	min-width:70px;
 	max-width:115px;
+	display: none;
 }
 .topbar>.signOut>button {
 	width: 100%;
@@ -1326,7 +1340,9 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 	margin-left: 3px;
 	margin-bottom: 2px;
 }
-
+.mobile {
+	display: none;
+}
 
 
 
@@ -1484,8 +1500,620 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 		padding-left: 10px;
 	}
 }
-@media all and (max-width: 1353px) {
+@media all and (max-width: 1325px) {
+	.navMenu>ul>li:nth-child(2)>a {
+		line-height: 1;
+		padding-top: 23px;
+	}
+}
+@media all and (max-width: 1300px) {
+	.navMenu>ul>li:last-child>.submenu>.categoryPart {
+		width: 135px;
+	}
+	.navMenu>ul>li:last-child>.submenu>.categoryPart>.header {
+		padding-left: 10px;
+	}
+	.navMenu>ul>li:last-child>.submenu>.categoryPart>.innerPart>ul>li {
+		padding-left: 10px;
+		font-size: 0.8rem;
+	}
+	.navMenu>ul>li:last-child>.submenu {
+		width: 695px;
+		
+	}
+	.navMenu>ul>li:last-child>.submenu>.categoryPart {
+		height: 350px;
+	}
+	.navMenu>ul>li:last-child>.submenu>.categoryPart>.header {
+		font-size: 0.7rem;
+	}
+	.navMenu>ul>li:last-child>.submenu>.leftPart {
+		width: 200px;
+		height: 350px;
+	}
+	.navMenu>ul>li:last-child>.submenu>.leftPart>.header {
+		padding-left: 10px;
+		font-size: 0.7rem;
+	}
+	.navMenu>ul>li:last-child>.submenu>.leftPart>.innerPart ul li {
+		padding-left: 10px;
+	}
+	.navMenu>ul>li:last-child>.submenu>.rightPart>.header {
+		padding-left: 10px;
+		font-size: 0.7rem;
+	}
+	.navMenu>ul>li:last-child>.submenu>.rightPart>.innerPart ul li {
+		padding-left: 10px;
+	}
+	.navMenu>ul>li:last-child>.submenu>.rightPart {
+		width: 360px;
+		height: 350px;
+	}
+	.navMenu>ul>li:last-child>.submenu>.leftPart>.innerPart ul li>.title {
+		width: 85px;
+		text-align:left;
+	}
+	.navMenu>ul>li:nth-child(7)>.submenu>.leftPart>.header {
+		padding-left: 10px;
+		font-size: 0.7rem;
+	}
+	.navMenu>ul>li:nth-child(7)>.submenu>.leftPart>.innerPart ul li {
+		padding-left: 10px;
+	}
+	.navMenu>ul>li:nth-child(7)>.submenu>.leftPart>.innerPart ul li>.title {
+		width: 85px;
+		text-align:left;
+	}
+	.navMenu>ul>li:nth-child(7)>.submenu>.leftPart {
+		width: 200px;
+		height: 350px;
+	}
+	.navMenu>ul>li:nth-child(7)>.submenu>.rightPart>.header {
+		padding-left: 10px;
+		font-size: 0.7rem;
+	}
+	.navMenu>ul>li:nth-child(7)>.submenu>.rightPart>.innerPart ul li {
+		padding-left: 10px;
+	}
+	.navMenu>ul>li:nth-child(7)>.submenu>.rightPart {
+		width: 360px;
+		height: 350px;
+	}
+	.navMenu>ul>li:nth-child(7)>.submenu {
+		width: 560px;
+		height: 350px;
+	}
+	.navMenu>ul>li:nth-child(6)>.submenu {
+		left:auto;
+		right: 0;
+		height: 350px;
+		width: 450px;
+	}
+	.navMenu>ul>li:nth-child(6)>.submenu>.leftPart>.header,
+	.navMenu>ul>li:nth-child(6)>.submenu>.rightPart>.header {
+		font-size: 0.7rem;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.navMenu>ul>li:nth-child(6)>.submenu>.leftPart>.innerPart,
+	.navMenu>ul>li:nth-child(6)>.submenu>.rightPart>.innerPart_wrap {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.navMenu>ul>li:nth-child(6)>.submenu>.leftPart>.innerPart>ul>li>.title {
+		font-size: 0.7rem;
+	}
+	.navMenu>ul>li:nth-child(6)>.submenu>.leftPart {
+		width: 205px;
+		height: 350px;
+	}
+	.navMenu>ul>li:nth-child(6)>.submenu>.rightPart {
+		width: 245px;
+		height: 350px;
+	}
+	.navMenu>ul>li:last-child>.submenu>.leftPart>.innerPart ul,
+	.navMenu>ul>li:last-child>.submenu>.rightPart>.innerPart ul,
+	.navMenu>ul>li:nth-child(7)>.submenu>.leftPart>.innerPart ul,
+	.navMenu>ul>li:nth-child(7)>.submenu>.rightPart>.innerPart ul {
+		max-height:260px;
+	}
+	.navMenu>ul>li:nth-child(6)>.submenu>.rightPart>.innerPart_wrap {
+		height:300px;
+	}
+	.topbar>.warning>span {
+		font-size: 0.7rem;
+	}
+}
+@media all and (max-width: 1260px) {
+	.leftSidebar__block {
+		height: 60px;
+	}
+	.leftSidebar {
+		width: 70px;
+	}
+	.leftSidebar__block>i {
+		line-height: 60px;
+		font-size: 1.2rem;
+	}
+	.leftSidebar__block>span.index {
+		font-size: 0.7rem;
+	}
+	.leftSidebar__block>a.football {
+	    background-position: 0px 5px;
+	}
+	.leftSidebar__block>a.hockey {
+	    background-position: 0px -50px;
+	}
+	.leftSidebar__block>a.tennis {
+		background-position: 0px -105px;
+	}
+	.leftSidebar__block>a.basketball {
+		background-position: 0px -160px;
+	}
+	.leftSidebar__block>a.baseball {
+		background-position: 0px -215px;
+	}
+	.leftSidebar__block>a.pingpong {
+		background-position: 0px -275px;
+	}
+	.leftSidebar__block>a.volleyball {
+		background-position: 0px -330px;
+	}
+	.leftSidebar__block>a.footsal {
+		background-position: 0px -385px;
+	}
+	.leftSidebar__block>a.bandminton {
+		background-position: 0px -440px;
+	}
+	.leftSidebar__block>a.darts {
+		background-position: 0px -495px;
+	}
+	.leftSidebar__block>a.ragby {
+		background-position: 0px -555px;
+	}
+	.leftSidebar__block>a.race {
+		background-position: 0px -610px;
+	}
+	.rightSidebar {
+		width: 280px;
+	}
+	#toTop {
+		right: 280px;
+	}
+}
+@media all and (max-width: 1170px) {
+	.topbar>.signOut {
+		max-width: 75px;
+	}
+	.topbar>.entry {
+		max-width: 75px;
+	}
+	.navMenu {
+		height: 50px;
+	}
+	.navMenu>ul>li>a {
+		line-height: 50px;
+		font-size: 0.55rem;
+	}
+	.navMenu>ul>li:nth-child(7)>a,
+	.navMenu>ul>li:nth-child(6)>a,
+	.navMenu>ul>li:nth-child(2)>a,
+	.navMenu>ul>li:nth-child(1)>a {
+		padding-top: 17px;
+	}
+	.navMenu>ul>li:nth-child(1),
+	.navMenu>ul>li:nth-child(2),
+	.navMenu>ul>li:nth-child(4),
+	.navMenu>ul>li:nth-child(5),
+	.navMenu>ul>li:nth-child(6) {
+		min-width:60px;
+	}
+	.navMenu>ul>li:nth-child(7) {
+		min-width:75px;
+	}
+	.navMenu>ul>li:nth-child(5)>a {
+		line-height: 1;
+		padding-top: 17px;
+	}
+	.navMenu>ul>li:nth-child(6)>.submenu, .navMenu>ul>li:nth-child(7)>.submenu,
+	.navMenu>ul>li:last-child>.submenu {
+		top: 50px;
+	}
+	.navMenu>ul>li:last-child:hover:before, .navMenu>ul>li:last-child.active:before,
+	.navMenu>ul>li:nth-child(6):hover:before, .navMenu>ul>li:nth-child(6).active:before,
+	.navMenu>ul>li:nth-child(7):hover:before, .navMenu>ul>li:nth-child(7).active:before {
+		top: 44px;
+	}
+}
+@media all and (max-width: 1142px) {
+	.navMenu>ul>li:nth-child(4)>a {
+		line-height: 1;
+		padding-top: 17px;
+	}
+}
+@media all and (max-width: 1110px) {
+	.topbar>.search>.input_wrap>input {
+		min-width:120px;
+	}
+	.topbar>.search>.input_wrap>button {
+		right: 20px;
+	}
+}
+@media all and (max-width: 1090px) {
 	
+	.topbar>.logo {
+		width: 120px;
+		margin-right: 25px;
+	}
+	.topbar>.logo>img {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.loggedIn>.lastEntry, .loggedIn>.name {
+		font-size: 0.7rem;
+	}
+	.navMenu>ul>li:nth-child(6) {
+		min-width:75px;
+	}
+}
+@media all and (max-width: 1050px) {
+	.topbar>.warning>span>img {
+		margin-right: 5px;
+		width: 30px;
+	}
+	.topbar>.warning>span {
+		font-size: 0.6rem;
+	}
+	.topbar>.warning {
+		min-width:240px;
+	}
+}
+@media all and (max-width: 960px) {
+	.rightSidebar, .leftSidebar, .navMenu, .midRow {
+		display: none;
+	}
+	.mainPart {
+		width: 100%;
+	}
+	.topbar>.search>.input_wrap>button {
+		right: 30px;
+	}
+	#toTop {
+		bottom: 20px;
+		right: 20px;
+	}
+	.topbar {
+		height: 50px;
+	}
+	.mobile {
+		display: block;
+	}
+	.menu__button {
+		width: 50px;
+		height: 100%;
+		background-color: #2bacb1;
+		text-align:center;
+	}
+	.menu__button>span {
+		font-size: 1.3rem;
+		color: #fff;
+		line-height: 50px;
+		display: none;
+	}
+	.menu__button>span.active {
+		display: block;
+	}
+	.menu__content {
+		position: absolute;
+		left: 0;
+		top: 50px;
+		background-color:#2bacb1;
+		z-index: 1100;
+		width: 320px;
+		display: none;
+	}
+	.menu__content>.firstLevel {
+		width: 100%;
+		padding: 20px 0;
+		margin: 0;
+		box-sizing: border-box;
+		
+	}
+	.menu__content>.firstLevel>li {
+		width: 100%;
+		padding:10px 20px;
+		box-sizing: border-box;
+	}
+	.menu__content>.firstLevel>li:hover {
+		background-color:#2c9fa5;
+	}
+	.menu__content>.firstLevel>li>a {
+		font-size: 1rem;
+		color: #fff;
+	}
+	.menu__content>.firstLevel>li:hover>a {
+		color: #5df59a;
+	}
+	.menu__content>.secondLevel {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: none;
+	}
+	.menu__content>.secondLevel>.getBack {
+		width: 100%;
+		height: 30px;
+		background-color: #2fbabf;
+		color: #8ad6d9;
+		padding-left: 15px;
+		box-sizing: border-box;
+		line-height: 25px;
+		font-size: 0.8rem;
+		font-style: italic;
+	}
+	.menu__content>.secondLevel>.getBack>i {
+		font-size: 1rem;
+		margin-right: 10px;
+		color: #fff;
+		line-height: 25px;
+	}
+	.menu__content>.secondLevel>.wrap {
+		width: 100%;
+		height: 405px;
+		overflow-y: auto;
+	}
+	.menu__content>.secondLevel>.wrap>ul {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	.menu__content>.secondLevel>.wrap>ul>li {
+		width: 100%;
+		padding:10px 20px;
+	}
+	.menu__content>.secondLevel>.wrap>ul>li>a {
+		font-size: 0.8rem;
+		color: #fff;
+	}
+	.menu__content>.secondLevel>.wrap>ul>li:hover {
+		background-color:#2c9fa5;
+	}
+	.menu__content>.secondLevel>.wrap>ul>li:hover>a {
+		color: #5df59a;
+	}
+	.newsList {
+		width: 50px;
+		min-width:50px;
+		height: 100%;
+		margin:0 20px;
+	}
+	.newsList__button {
+		width: 100%;
+		height: 100%;
+		background-color:#353942;
+		background-position:center center;
+		background-size:100%;
+		background-repeat:no-repeat;
+		background-image:url(../img/icons/lenta_icon.png);
+	}
+	.newsList__button>span {
+		font-size: 1.2rem;
+		color: #fff;
+		text-align:center;
+		line-height: 50px;
+		display: none;
+		width: 100%;
+		height: 100%;
+		background-color:#353942;
+	}
+	.newsList__button>span.active {
+		display: block;
+	}
+	.newsLIst__wrap {
+		position: absolute;
+		top: 50px;
+		right: 0;
+		width: 320px;
+		height: 440px;
+		overflow-y: auto;
+		background-color:#353942;
+		padding-left: 10px;
+		padding-right: 20px;
+		display: none;
+	}
+	.rightSidebar__newsblock {
+		margin-left: 0px;
+		width: 100%;
+		padding:20px 0;
+	}
+	.rightSidebar__newsblock:first-child {
+		padding-top: 20px;
+	}
+	.rightSidebar__newsblock:last-child {
+		padding-bottom: 20px;
+	}
+
+	.sportSelect {
+		width: 100%;
+		height: 30px;
+		background-color:#f1f3f2;
+		text-align:center;
+	}
+	.sportSelect_wrap {
+		margin:0 auto;
+		width: 320px;
+		height: 100%;/* 
+		margin-left: 50%;
+		transform: translateX(-50%); */
+	}
+	.sportSelect__button {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 10px;
+	}
+	.sportSelect__button>span {
+		color:#4e5157;
+		font-size: 0.8rem;
+	}
+	.sportSelect__button>span.icon {
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-color:#a4a7b0;
+		color: #fff;
+		font-size: 1.4rem;
+		text-align:center;
+		line-height: 30px;
+	}
+	.sportSelect__button>span.icon.active>i {
+		transform: rotateZ(180deg);
+	}
+	.sportSelect__content {
+		position: absolute;
+		top: 30px;
+		right: 0;
+		width: 320px;
+		height: 440px;
+		overflow-y: auto;
+		z-index: 1100;
+		background-color:#fff;
+		padding:10px 0;
+		display: none;
+	}
+	.sportSelect__content>.leftSidebar__block {
+		display: block;
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 25px;
+		height: 30px;
+	}
+	.leftSidebar__block:first-child,
+	.leftSidebar__block:nth-child(2n-1) {
+		background-color:transparent;
+	}
+	.sportSelect__content>.leftSidebar__block:hover {
+		background-color:#efeff0;
+	}
+	.sportSelect__content>.leftSidebar__block:hover>a {
+		animation: none;
+	}
+	.sportSelect__content>.leftSidebar__block:hover>a>span.title {
+		color: #2bacb1;
+	}
+	.sportSelect__content>.leftSidebar__block>a {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		background:none;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.sportSelect__content>.leftSidebar__block>a>.icon {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		background-repeat:no-repeat;
+		background-position:center center;
+		background-size:90% 90%;
+	}
+	.sportSelect__content>.leftSidebar__block>a>span.title {
+		display: inline-block;
+		font-size: 0.8rem;
+		color: #4e5157;
+		width: calc(100% - 90px);
+		text-align:left;
+	}
+	.sportSelect__content>.leftSidebar__block>a>span.index {
+		display: inline-block;
+		width:50px;
+		text-align:right;
+		font-size: 0.8rem;
+		color: #2aaaaf;
+	}
+	.sportSelect__content>.leftSidebar__block>a>span.index.red {
+		color: #e7604a;
+	}
+	.sportSelect__content>.leftSidebar__block>a.football>.icon {
+		background-image:url(../img/icons/football_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.hockey>.icon {
+		background-image:url(../img/icons/hockey_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.tennis>.icon {
+		background-image:url(../img/icons/tennis_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.basketball>.icon {
+		background-image:url(../img/icons/basketball_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.baseball>.icon {
+		background-image:url(../img/icons/baseball_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.pingpong>.icon {
+		background-image:url(../img/icons/pingpong_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.volleyball>.icon {
+		background-image:url(../img/icons/volleyball_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.footsal>.icon {
+		background-image:url(../img/icons/footsal_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.bandminton>.icon {
+		background-image:url(../img/icons/badminton_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.darts>.icon {
+		background-image:url(../img/icons/darts_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.ragby>.icon {
+		background-image:url(../img/icons/rugby_icon.png);
+	}
+	.sportSelect__content>.leftSidebar__block>a.race>.icon {
+		background-image:url(../img/icons/handball_icon.png);
+	}
+}
+@media all and (max-width: 767px) {
+	.topbar>.warning {
+		display: none;
+	}
+	.topbar>.logo>img {
+		min-width:120px;
+	}
+	.topbar {
+		justify-content: space-between;
+	}
+	.topbar>.search>.input_wrap>input {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.topbar>.search>.input_wrap>button {
+		right: 15px;
+	}
+}
+@media all and (max-width: 575px) {
+	.search {
+		display: none;
+	}
+	.mobile.search {
+		display: block;
+	}
+	.mobile.search .search__button {
+		width: 40px;
+		height: 40px;
+		background-color:#4dbe7a;
+		text-align:center;
+	}
+	.mobile.search .search__button>span {
+		line-height: 40px;
+		color: #fff;
+		font-size: 1.3rem;
+		display: none;
+	}
+	.mobile.search .search__button>span.active {
+		display: block;
+	}
 }
 
 
@@ -1594,6 +2222,92 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 	text-decoration:underline;
 }
 
-
-
-
+@media all and (max-width: 1490px) {
+	.footer__topPart-links>a {
+		display: block;
+	}
+	.footer__topPart-links>a:first-child {
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+	.footer__bottomPart {
+		height:auto;
+		flex-direction: column;
+		justify-content: center;
+		padding: 10px;
+	}
+	.footer__bottomPart>.warning {
+		margin-bottom: 5px;
+	}
+	#toTop {
+		bottom: 126px;
+	}
+}
+@media all and (max-width: 1375px) {
+	.footer__topPart {
+		height:auto;
+		padding:20px 10px;
+		display: block;
+	}
+	.footer__topPart-logo {
+		display: block;
+		width: 100%;
+		text-align:center;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #3c3f47;
+		margin-bottom: 15px;
+	}
+	.footer__topPart-copyright {
+		display: block;
+		width: 100%;
+		text-align:center;
+		padding-top: 15px;
+		margin-top: 15px;
+		border-top: 1px solid #3c3f47;
+	}
+	.footer__topPart-links {
+		display: inline-block;
+		width: 49%;
+		text-align:center;	
+	}
+	.footer__topPart-social {
+		display: inline-block;
+		width: 49%;
+		text-align:center;
+	}
+	.footer__topPart-links>a {
+		display: inline-block;
+		padding-top: 5px;
+	}
+	.footer__topPart-links>a:first-child {
+		margin-bottom: 0px;
+		margin-right: 20px;
+	}
+	.footer__topPart-links>a:last-child {
+		margin-bottom: 0px;
+		margin-right: 20px;
+	}
+	#toTop {
+		bottom: 230px;
+	}
+}
+@media all and (max-width: 960px) {
+	#toTop {
+		bottom: 20px;
+		right: 20px;
+	}
+}
+@media all and (max-width: 575px) {
+	.footer__bottomPart>.policies {
+		text-align:center;
+		margin-top: 5px;
+		padding-top: 5px;
+		border-top:1px solid #3c3f47;
+		width: 100%;
+	}
+	.footer__bottomPart>.policies>a {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+}

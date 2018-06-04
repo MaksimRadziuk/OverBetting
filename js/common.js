@@ -110,6 +110,16 @@ $(document).ready(function(){
 
 	$('.menu__button').click(function(){
 		$('.menu__content').toggle();
+		$('.newsList__button>span').removeClass('active');
+		$('.sportSelect__button>span').removeClass('active');
+		$('.sportSelect__content').hide();
+		$('.search__button>span').removeClass('active');
+		$('.search__button>.default').addClass('active');
+		$('.profile__button>span').removeClass('active');
+		$('.profile__button>.default').addClass('active');
+		$('.newsLIst__wrap').hide();
+		$('.search__content').hide();
+		$('.profile__content').hide();
 		$(this).children('span').toggleClass('active');
 	});
 	$('.menu__content>.firstLevel>li').click(function(){
@@ -123,12 +133,66 @@ $(document).ready(function(){
 
 	$('.newsList__button').click(function(){
 		$('.newsLIst__wrap').toggle();
+		$('.menu__button>span').removeClass('active');
+		$('.menu__button>.default').addClass('active');
+		$('.sportSelect__button>span').removeClass('active');
+		$('.sportSelect__content').hide();
+		$('.search__button>span').removeClass('active');
+		$('.search__button>.default').addClass('active');
+		$('.profile__button>span').removeClass('active');
+		$('.profile__button>.default').addClass('active');
+		$('.menu__content').hide();
+		$('.search__content').hide();
+		$('.profile__content').hide();
 		$(this).children('span').toggleClass('active');
 	});
 
 	$('.sportSelect__button').click(function(){
 		$('.sportSelect__content').toggle();
+		$('.menu__button>span').removeClass('active');
+		$('.menu__button>.default').addClass('active');
+		$('.newsList__button>span').removeClass('active');
+		$('.search__button>span').removeClass('active');
+		$('.search__button>.default').addClass('active');
+		$('.profile__button>span').removeClass('active');
+		$('.profile__button>.default').addClass('active');
+		$('.menu__content').hide();
+		$('.search__content').hide();
+		$('.profile__content').hide();
+		$('.newsLIst__wrap').hide();
 		$(this).children('span.icon').toggleClass('active');
+	});
+
+	$('.search__button').click(function(){
+		$('.search__content').toggle();
+		$('.menu__button>span').removeClass('active');
+		$('.menu__button>.default').addClass('active');
+		$('.newsList__button>span').removeClass('active');
+		$('.sportSelect__button>span').removeClass('active');
+		$('.sportSelect__content').hide();
+		$('.search__button>span').removeClass('active');
+		$('.search__button>.default').addClass('active');
+		$('.profile__button>span').removeClass('active');
+		$('.profile__button>.default').addClass('active');
+		$('.menu__content').hide();
+		$('.profile__content').hide();
+		$('.newsLIst__wrap').hide();
+		$(this).children('span').toggleClass('active');
+	});
+
+	$('.profile__button').click(function(){
+		$('.profile__content').toggle();
+		$('.menu__button>span').removeClass('active');
+		$('.menu__button>.default').addClass('active');
+		$('.newsList__button>span').removeClass('active');
+		$('.sportSelect__button>span').removeClass('active');
+		$('.sportSelect__content').hide();
+		$('.search__button>span').removeClass('active');
+		$('.search__button>.default').addClass('active');
+		$('.menu__content').hide();
+		$('.search__content').hide();
+		$('.newsLIst__wrap').hide();
+		$(this).children('span').toggleClass('active');
 	});
 
 });

@@ -39,7 +39,7 @@
 	</div>
 
 	<div class="leftSidebar">
-		<div class="leftSidebar__block" id="leftSidebarToggle"><i class="fa fa-angle-double-left" aria-hidden="true"></i></div>
+		<div class="leftSidebar__block" id="leftSidebarToggle"></div>
 		<div class="leftSidebar__block"><a href="" class="icon football"></a><span class="index">25</span></div>
 		<div class="leftSidebar__block"><a href="" class="icon hockey"></a><span class="index red">9</span></div>
 		<div class="leftSidebar__block"><a href="" class="icon tennis"></a><span class="index">12</span></div>
@@ -176,9 +176,12 @@
 					</div>
 				</div>
 				<div class="loggedIn">
-					<span class="lastEntry">Сегодня 14.05.2018</span>
+					<!-- <span class="lastEntry">Сегодня 14.05.2018</span> -->
 					<span><img src="img/emblem_1.png" alt=""></span>
 					<span class="name">Владимир Владимирович</span>
+					<span class="coins"></span>
+					<span class="title">Баллы:</span>
+					<span class="parameter">986</span>
 				</div>
 				<div class="entry">
 					<button id="signIn">Войти</button>
@@ -911,7 +914,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="marine"><a href="">Ещё...<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					<li class="marine"><a href=""><span class="first">Блоги</span><span class="second">Ещё...</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						<div class="submenu">
 							<div class="categoryPart">
 								<div class="header">Остальные категории</div>
@@ -1344,11 +1347,68 @@
 							</div>
 						</div>
 						<div class="betsBlock__footer">
+							<a href="" class="inactive">Статистика</a>
+							<a href="" class="inactive">Ставки</a>
+							<a href="">Трансляция</a>
+							<a href="">Обзор</a>
+							<a href="">Прогнозы</a>
+							<div class="betsBlock__footer-mobile">
+								<span>Меню ставок на спорт</span>
+								<span><i class="fa fa-angle-down"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="betsBlock">
+						<div class="betsBlock__header">
+							<div class="stat__wrap">
+								<div class="watchers">
+									<span><img src="img/icons/eye_icon.png" alt=""></span>
+									<span class="parameter">28</span>
+								</div>
+								<div class="bars">
+									<span><img src="img/icons/bars_icon.png" alt=""></span>
+									<span class="parameter">32</span>
+								</div>
+							</div>
+							<div class="date">
+								<span><img src="img/icons/clock_icon.png" alt=""></span>
+								<span class="parameter">13.05.18 14:00</span>
+							</div>
+						</div>
+						<div class="betsBlock__content">
+							<div class="commands_wrap">
+								<div class="leftPart">
+									<div class="emblem"><img src="img/emblem_2.png" alt=""></div>
+									<div class="title">Спартак</div>
+								</div>
+								<div class="vs"><img src="img/icons/betsBlock_vs_icon.png" alt=""></div>
+								<div class="rightPart">
+									<div class="emblem"><img src="img/emblem_1.png" alt=""></div>
+									<div class="title">Динамо Москва</div>
+								</div>
+							</div>
+							<div class="knowMore"><a href="">Подробнее</a></div>
+							<div class="statistic">
+								<div class="statistic__block">
+									<div class="title">П1</div>
+									<div class="parameter">1,24</div>
+								</div>
+								<div class="statistic__block">
+									<div class="title">Х</div>
+									<div class="parameter">8,50</div>
+								</div>
+								<div class="statistic__block">
+									<div class="title">П2</div>
+									<div class="parameter">16,00</div>
+								</div>
+							</div>
+						</div>
+						<div class="betsBlock__footer">
 							<a href="">Статистика</a>
 							<a href="">Ставки</a>
 							<a href="">Трансляция</a>
 							<a href="">Обзор</a>
-							<a href="">Прогнозы</a>
+							<a href="" class="inactive">Прогнозы</a>
 							<div class="betsBlock__footer-mobile">
 								<span>Меню ставок на спорт</span>
 								<span><i class="fa fa-angle-down"></i></span>
@@ -1459,66 +1519,9 @@
 						</div>
 						<div class="betsBlock__footer">
 							<a href="">Статистика</a>
-							<a href="">Ставки</a>
-							<a href="">Трансляция</a>
-							<a href="">Обзор</a>
-							<a href="">Прогнозы</a>
-							<div class="betsBlock__footer-mobile">
-								<span>Меню ставок на спорт</span>
-								<span><i class="fa fa-angle-down"></i></span>
-							</div>
-						</div>
-					</div>
-					<div class="betsBlock">
-						<div class="betsBlock__header">
-							<div class="stat__wrap">
-								<div class="watchers">
-									<span><img src="img/icons/eye_icon.png" alt=""></span>
-									<span class="parameter">28</span>
-								</div>
-								<div class="bars">
-									<span><img src="img/icons/bars_icon.png" alt=""></span>
-									<span class="parameter">32</span>
-								</div>
-							</div>
-							<div class="date">
-								<span><img src="img/icons/clock_icon.png" alt=""></span>
-								<span class="parameter">13.05.18 14:00</span>
-							</div>
-						</div>
-						<div class="betsBlock__content">
-							<div class="commands_wrap">
-								<div class="leftPart">
-									<div class="emblem"><img src="img/emblem_2.png" alt=""></div>
-									<div class="title">Спартак</div>
-								</div>
-								<div class="vs"><img src="img/icons/betsBlock_vs_icon.png" alt=""></div>
-								<div class="rightPart">
-									<div class="emblem"><img src="img/emblem_1.png" alt=""></div>
-									<div class="title">Динамо Москва</div>
-								</div>
-							</div>
-							<div class="knowMore"><a href="">Подробнее</a></div>
-							<div class="statistic">
-								<div class="statistic__block">
-									<div class="title">П1</div>
-									<div class="parameter">1,24</div>
-								</div>
-								<div class="statistic__block">
-									<div class="title">Х</div>
-									<div class="parameter">8,50</div>
-								</div>
-								<div class="statistic__block">
-									<div class="title">П2</div>
-									<div class="parameter">16,00</div>
-								</div>
-							</div>
-						</div>
-						<div class="betsBlock__footer">
-							<a href="">Статистика</a>
-							<a href="">Ставки</a>
-							<a href="">Трансляция</a>
-							<a href="">Обзор</a>
+							<a href="" class="inactive">Ставки</a>
+							<a href="" class="inactive">Трансляция</a>
+							<a href="" class="inactive">Обзор</a>
 							<a href="">Прогнозы</a>
 							<div class="betsBlock__footer-mobile">
 								<span>Меню ставок на спорт</span>
@@ -1840,7 +1843,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -1873,7 +1876,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -1906,7 +1909,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -1939,7 +1942,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -1972,7 +1975,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2005,7 +2008,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2038,7 +2041,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2071,7 +2074,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2106,7 +2109,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2139,7 +2142,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2172,7 +2175,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2205,7 +2208,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2238,7 +2241,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2271,7 +2274,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2304,7 +2307,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2337,7 +2340,7 @@
 							<div class="title">Фулхэм - Дерби Каунти: время стричь овец</div>
 							<div class="description"><p>Это ответная часть полуфинальной дуэли плей-офф Чемпионшипа, в которой лидерство пока находится на стороне...</p></div>
 							<div class="facerad_wrap">
-								<div class="title">Facerad</div>
+								<div class="title"><a href="">Facerad</a></div>
 								<div class="status"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>13.05.18 в 14:00</span></div>
 							</div>
 							<div class="anilytic_wrap">
@@ -2370,7 +2373,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2382,7 +2385,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2394,7 +2397,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2406,7 +2409,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2418,7 +2421,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2430,7 +2433,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2442,7 +2445,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2454,7 +2457,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2466,7 +2469,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2478,7 +2481,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2490,7 +2493,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">
@@ -2502,7 +2505,7 @@
 						<div class="imgPart"><div class="img"></div></div>
 						<div class="textPart">
 							<div class="header">
-								<div class="author">Andrey M.</div>
+								<div class="author"><a href="">Andrey M.</a></div>
 								<div class="publishingDate">13.05.18 14:00</div>
 							</div>
 							<div class="description">

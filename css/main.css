@@ -470,10 +470,15 @@ box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.4);
 	-webkit-transition: all 0.1s linear;
 	transition: all 0.1s linear;
 }
+.bets .betsBox .betsBlock>.betsBlock__footer>a.inactive {
+	background-color: #fff;
+	pointer-events: none;
+	color: #a2a5ae;
+	border-right-color: #ebebeb;
+}
 .bets .betsBox .betsBlock>.betsBlock__footer>a:hover {
-	background-color:#fff;
-	color: #c0c3cb;
-	border-right: 1px solid #fff;
+	background-color:#babdc8;
+	color: #fff;
 }
 .bets .betsBox .betsBlock>.betsBlock__footer>a:first-child {
 	border-left:none;
@@ -689,7 +694,7 @@ box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.4);
 .bookmakers {
 	width: 100%;
 	background-color:#2bacb1;
-	padding: 55px 40px 80px 40px;
+	padding: 40px 40px 90px 40px;
 }
 .bookmakers h2 {
 	text-align: center;
@@ -736,8 +741,6 @@ box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.4);
 	max-height: 90px;
 	background-color:#fff;
 	border-radius: 3px;
-	-webkit-box-shadow: 0px 0px 87px -30px rgba(0,0,0,0.3);
-box-shadow: 0px 0px 87px -30px rgba(0,0,0,0.3);
 	overflow:hidden;
 	margin-bottom: 30px;
 	display: -webkit-box;
@@ -806,12 +809,13 @@ box-shadow: 0px 0px 87px -30px rgba(0,0,0,0.3);
 	height: 30px;
 	max-height: 30px;
 	border:2px solid;
-	line-height: 30px;
+	line-height: 26px;
 	font-size: 0.8rem;
 	text-align: center;
 	-webkit-transition: all 0.1s linear;
 	transition: all 0.1s linear;
 	border-radius: 15px;
+	box-sizing: border-box;
 }
 .bookmakers__block-buttons>a:first-child {
 	background-color:transparent;
@@ -1134,7 +1138,7 @@ box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.4);
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
-.tabContent__block-content>.facerad_wrap>.title {
+.tabContent__block-content>.facerad_wrap>.title>a {
 	color: #52ca82;
 	font-size: 0.9rem;
 	text-align:left;
@@ -1388,7 +1392,7 @@ box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.4);
 	width: 100%;
 	height: 30px;
 }
-.news__block>.textPart>.header>.author {
+.news__block>.textPart>.header>.author>a {
 	font-size: 0.9rem;
 	color: #52ca82;
 	text-align:left;

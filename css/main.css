@@ -1,5 +1,7 @@
 
-
+.mainPart {
+	width: 100%;
+}
 /* СЛАЙДЕР ГЛАВНОЙ СТРАНИЦЫ */
 .sliderMain {
 	width: 100%;

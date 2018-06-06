@@ -7,6 +7,7 @@ body {
  margin: 0;
  font-family: Proxima Nova;
  font-weight: 400;
+ float: left;
 }
 
 p {
@@ -53,6 +54,9 @@ input[type='text']:focus:-ms-input-placeholder      {color:transparent;}
 .content {
  min-height: 100vh;
  width: 100%;
+ padding-left: 100px;
+ padding-right: 340px;
+ background-color:#4e5157;
 }
 ul:focus {
 	outline: none;
@@ -92,6 +96,9 @@ ul:focus {
  -webkit-box-shadow: inset -2px 0px 10px 0px rgba(62,65,76,1);
  box-shadow: inset -2px 0px 10px 0px rgba(62,65,76,1);
  z-index:2;
+ position: absolute;
+ left: 0;
+ top: 0;
  -webkit-transition: all 0.2s linear;
  transition: all 0.2s linear;
 }
@@ -206,6 +213,9 @@ ul:focus {
 .rightSidebar {
 	width: 340px;
 	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
 	background-color:#353942;
 	-webkit-box-shadow: inset 2px 0px 10px 0px rgba(62,65,76,1);
  	box-shadow: inset 2px 0px 10px 0px rgba(62,65,76,1);
@@ -1684,6 +1694,9 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 	}
 }
 @media all and (max-width: 1260px) {
+	.content {
+	 padding-left: 70px;
+	}
 	.leftSidebar__block {
 		height: 60px;
 	}
@@ -1736,12 +1749,6 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 	.leftSidebar__block>a.race {
 		background-position: 0px -610px;
 	}
-	.rightSidebar {
-		width: 280px;
-	}
-	#toTop {
-		right: 280px;
-	}
 	.navMenu>ul>li:last-child>a>span.second {
 		display: inline-block;
 	}
@@ -1749,7 +1756,10 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 		display: none;
 	}
 }
-@media all and (max-width: 1170px) {
+@media all and (max-width: 1230px) {
+	.navMenu>ul>li:last-child {
+		min-width:45px;
+	}
 	.topbar>.signOut {
 		max-width: 75px;
 	}
@@ -1836,7 +1846,11 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 		min-width:240px;
 	}
 }
-@media all and (max-width: 960px) {
+@media all and (max-width: 995px) {
+	.content {
+	 padding-left: 0;
+	 padding-right: 0;
+	}
 	.rightSidebar, .leftSidebar, .navMenu, .midRow {
 		display: none;
 	}
@@ -2180,13 +2194,9 @@ box-shadow: 0px 3px 5px 0px rgba(204,204,204,0.2);
 	.topbar>.search>.input_wrap>button {
 		right: 15px;
 	}
-}
-@media all and (max-width: 715px) {
 	.loggedIn>.lastEntry, .loggedIn>span>img, .loggedIn>.name {
 		margin-right: 5px
 	}
-}
-@media all and (max-width: 680px) {
 	.search, .loggedIn, .topbar>.signOut {
 		display: none;
 	}

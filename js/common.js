@@ -107,7 +107,10 @@ $(document).ready(function(){
 		
 	  
 	});*/
-
+	$('#leftSidebarToggle').click(function(){
+		$('.leftSidebar').hide();
+		$('.content').css({'paddingLeft': '0'})
+	});
 	
 
 	if (innerWidth>960) {
